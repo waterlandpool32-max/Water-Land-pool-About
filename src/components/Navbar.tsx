@@ -29,14 +29,14 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isSolid ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
+    <nav className="fixed w-full z-50 transition-all duration-300 bg-white shadow-md py-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <a href="/" className={`flex items-center ${isSolid ? 'text-[#545454]' : 'text-white'}`}>
+          <a href="/" className="flex items-center text-slate-700">
             <img 
               src="https://i.postimg.cc/Dwjpnqm1/Logo-Waterland-Pools-removebg-preview.png" 
               alt="Waterland Pools" 
-              className={`h-[77px] w-auto transition-all ${isSolid ? '' : 'brightness-0 invert'}`}
+              className="h-[77px] w-auto transition-all"
               referrerPolicy="no-referrer"
             />
           </a>
@@ -50,7 +50,7 @@ export default function Navbar() {
                 className={`text-sm font-medium transition-colors hover:text-brand-light ${
                   location.pathname === link.path 
                     ? 'text-brand-light' 
-                    : isSolid ? 'text-[#545454]' : 'text-white'
+                    : 'text-slate-700'
                 }`}
               >
                 {link.name}
@@ -59,11 +59,7 @@ export default function Navbar() {
             
             <button
               onClick={() => setLanguage(language === 'en' ? 'es' : 'en')}
-              className={`flex items-center space-x-1 px-3 py-1 rounded-full border transition-all ${
-                isSolid 
-                  ? 'border-slate-200 text-[#545454] hover:bg-slate-50' 
-                  : 'border-white/30 text-white hover:bg-white/10'
-              }`}
+              className="flex items-center space-x-1 px-3 py-1 rounded-full border border-slate-200 text-slate-700 transition-all hover:bg-slate-50"
             >
               <Globe size={16} />
               <span className="text-xs font-bold uppercase">{language}</span>
@@ -78,13 +74,13 @@ export default function Navbar() {
           <div className="md:hidden flex items-center space-x-4">
             <button
               onClick={() => setLanguage(language === 'en' ? 'es' : 'en')}
-              className={`p-2 rounded-full border ${isSolid ? 'border-slate-200 text-[#545454]' : 'border-white/30 text-white'}`}
+              className="p-2 rounded-full border border-slate-200 text-slate-700"
             >
               <span className="text-xs font-bold uppercase">{language}</span>
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`${isSolid ? 'text-[#545454]' : 'text-white'}`}
+              className="text-slate-700"
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
