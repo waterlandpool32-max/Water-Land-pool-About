@@ -36,8 +36,8 @@ export default function About() {
 
         {/* Wave Effect */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-10">
-          <svg className="relative block w-[calc(100%+1.3px)] h-[60px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C58.47,113.15,145.69,125.57,233.22,115.49,271.8,111.06,298,102.36,321.39,56.44Z" className="fill-white"></path>
+          <svg className="relative block w-[calc(100%+1.3px)] h-[80px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,60 C 150,120 350,0 600,60 C 850,120 1050,0 1200,60 L 1200,120 L 0,120 Z" className="fill-white"></path>
           </svg>
         </div>
       </section>
