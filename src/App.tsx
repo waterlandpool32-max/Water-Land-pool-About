@@ -10,6 +10,7 @@ import Portfolio from './pages/Portfolio';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
 import ServiceDetail from './pages/ServiceDetail';
+import CTA from './components/CTA';
 
 // Service Data
 const serviceData = {
@@ -269,6 +270,7 @@ export default function App() {
               ))}
             </Routes>
           </main>
+          <CTA />
           <Footer />
         </div>
       </Router>

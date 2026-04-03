@@ -76,13 +76,6 @@ export default function Testimonials() {
               </motion.div>
             ))}
           </div>
-
-          <div className="mt-20 text-center space-y-8">
-            <h2 className="text-3xl font-bold text-brand-dark">{t('testimonials_cta_title')}</h2>
-            <a href="/contact" className="btn-primary inline-block">
-              {t('cta_schedule')}
-            </a>
-          </div>
         </div>
       </section>
     </div>

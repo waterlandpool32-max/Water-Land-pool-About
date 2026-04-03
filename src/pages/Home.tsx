@@ -165,13 +165,6 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className="bg-white/5 backdrop-blur-lg p-12 rounded-3xl border border-white/10 text-center space-y-6">
-              <h3 className="text-3xl font-bold">{t('home_ready_title')}</h3>
-              <p className="text-slate-300">{t('home_ready_subtitle')}</p>
-              <a href="/contact" className="btn-primary inline-block w-full">
-                {t('cta_schedule')}
-              </a>
-            </div>
           </div>
         </div>
       </section>

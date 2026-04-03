@@ -59,14 +59,6 @@ export default function Portfolio() {
               </motion.div>
             ))}
           </div>
-
-          <div className="mt-20 bg-slate-50 p-12 rounded-[3rem] text-center space-y-6">
-            <h2 className="text-3xl font-bold text-brand-dark">{t('portfolio_cta_title')}</h2>
-            <p className="text-slate-600">{t('portfolio_cta_subtitle')}</p>
-            <a href="/contact" className="btn-primary inline-block">
-              {t('cta_schedule')}
-            </a>
-          </div>
         </div>
       </section>
     </div>
